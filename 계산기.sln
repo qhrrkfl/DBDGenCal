@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "계산기", "계산기\계산기.csproj", "{69721C0D-49CA-4074-82A1-EC40E458BF60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataVMClass", "DataVMClass\DataVMClass.csproj", "{C55F513A-7420-4B5E-AA7E-9F27F1BBA62D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibrary1", "WpfControlLibrary1\WpfControlLibrary1.csproj", "{B2AC5DE0-4FA0-465D-8AC3-AF48BF5378C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69721C0D-49CA-4074-82A1-EC40E458BF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69721C0D-49CA-4074-82A1-EC40E458BF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69721C0D-49CA-4074-82A1-EC40E458BF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69721C0D-49CA-4074-82A1-EC40E458BF60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55F513A-7420-4B5E-AA7E-9F27F1BBA62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55F513A-7420-4B5E-AA7E-9F27F1BBA62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55F513A-7420-4B5E-AA7E-9F27F1BBA62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55F513A-7420-4B5E-AA7E-9F27F1BBA62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AC5DE0-4FA0-465D-8AC3-AF48BF5378C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AC5DE0-4FA0-465D-8AC3-AF48BF5378C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AC5DE0-4FA0-465D-8AC3-AF48BF5378C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AC5DE0-4FA0-465D-8AC3-AF48BF5378C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
