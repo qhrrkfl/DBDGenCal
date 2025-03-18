@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:계산기"
-         xmlns:BAD="clr-namespace:계산기.buttonAndData;assembly=WpfControlLibrary1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -29,6 +28,22 @@
 
             <Button Grid.Row="0" Grid.Column="0" Content="생존자 추가" Click="AddSurv"></Button>
             <Button Grid.Row="1" Grid.Column="0" Content="생존자 제거" Click="RemoveSurv"></Button>
+            <!--<ToggleButton Grid.Row="1" x:Name="TogglePopupButton" Height="30" Width="150" HorizontalAlignment="Left">
+                <StackPanel>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Run Text="Is button toggled? " />
+            <Run Text="{Binding IsChecked, ElementName=TogglePopupButton}" />
+                    </TextBlock>
+
+                    <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=TogglePopupButton}">
+                        <Border BorderThickness="1">
+                            <TextBlock Name="myPopupText" Background="LightBlue" Foreground="Blue" Padding="30">
+                Popup Text
+                            </TextBlock>
+                        </Border>
+                    </Popup>
+                </StackPanel>
+            </ToggleButton>-->
         </Grid>
         <ListView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" d:ItemsSource="{d:SampleData ItemCount=4}">
             <ListView.ItemTemplate>

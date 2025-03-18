@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -9,6 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace 계산기
 {
     /// <summary>
@@ -16,6 +18,7 @@ namespace 계산기
     /// </summary>
     public partial class MainWindow : Window
     {
+        //ObservableCollection<>
         public MainWindow()
         {
             InitializeComponent();

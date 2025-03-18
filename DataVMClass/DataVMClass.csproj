@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataFactory.cs" />
+    <Compile Include="Items\AddOnModel.cs" />
+    <Compile Include="Items\AddOnVM.cs" />
+    <Compile Include="Items\ToolBoxModel.cs" />
+    <Compile Include="Items\ToolBoxVM.cs" />
+    <Compile Include="Player\PlayerModel.cs" />
+    <Compile Include="Player\PlayerVM.cs" />
     <Compile Include="VMClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

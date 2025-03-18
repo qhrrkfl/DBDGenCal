@@ -11,27 +11,32 @@ using System.Text;
 
 namespace DataVMClass
 {
-    
+
 
     public class ToolBox
     {
-        public ToolBox( string Name , int charges , float rePairRate) 
+        public ToolBox(string Name, int Maxcharges, float rePairRate)
         {
             this.Name = Name;
-            this.charges = charges;
+            this.Maxcharges = Maxcharges;
             this.repairRate = rePairRate;
         }
         public string Name;
-        public int charges;
+        
+        public int Maxcharges;
+        public int CurrentCharges;
         public float repairRate;
-        ToolboxAddOn[] addons = new ToolboxAddOn[2];
+        public float CurrentRepairRate;
+
+        public ToolboxAddOn addons1;
+        public ToolboxAddOn addons2;
     }
 
 
 
     public class ToolboxAddOn : IToolBoxAddon
     {
-        public ToolboxAddOn(string Name , string EffectDetail , Action<ToolBox> action)
+        public ToolboxAddOn(string Name, string EffectDetail, Action<ToolBox> action)
         {
 
         }
@@ -49,22 +54,8 @@ namespace DataVMClass
     {
         void applyAddon(ToolBox target);
     }
-    public class Player
-    {
-        public ToolBox Item;
-    }
+   
 
 
-    public class PlayerVM : INotifyPropertyChanged
-    {
-        public PlayerVM() { }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
-
+   
 }

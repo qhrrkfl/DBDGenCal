@@ -12,17 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DataVMClass.Player;
 
-namespace 계산기.buttonAndData
+namespace WpfControlLibrary1
 {
     /// <summary>
-    /// buttonAndData.xaml에 대한 상호 작용 논리
+    /// SurvivorStatusWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class buttonAndData : UserControl
+    public partial class SurvivorStatusWindow : UserControl
     {
-        public buttonAndData()
+        public SurvivorStatusWindow()
         {
             InitializeComponent();
         }
+
+        public void SetSelectedPlayer(PlayerVM VM)
+        {
+            this.DataContext = VM;
+        }
+
+
     }
 }
